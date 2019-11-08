@@ -1,13 +1,14 @@
 <?php
 session_start();
 require ('config.php');
-	// establecer variables de sesion y redirigir
+
 ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Autentificacion</title>
+	<title>registrarse</title>
 </head>
 <body>
 <link rel="stylesheet" type="text/css" href="public/css/style.css">
@@ -22,20 +23,15 @@ require ('config.php');
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <p> Iniciar Sesion </p>
+      <p> Registrarse </p>
     </div>
 
     <!-- Login Form -->
     <form method="POST" action="<?= $_SERVER['config.php'];?>">
       <input type="text" id="login" class="fadeIn second" name="user" placeholder="login">
       <input type="text" id="password" class="fadeIn third" name="pwd" placeholder="password">
-      <input type="submit" class="fadeIn fourth" name="submit" value="Entra">
+      <input type="submit" class="fadeIn fourth" name="submit2" value="Entra">
     </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="register.php">No tienes cuenta? Registrate</a>
-    </div>
 
   </div>
 </div>
